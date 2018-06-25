@@ -30,14 +30,9 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
-  int sum = A[0];
-  int t;
-  for(t = 1; t < n; t++){
-    sum = sum + A[t];
-}
   lb = 0;
-  ub = sum; 
-  while(ub - lb >1){
+  ub = 1000000000;
+  while(ub - lb > 1){
     int m = (lb + ub) / 2;
     if(p(m)){
         ub = m;
